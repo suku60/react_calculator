@@ -1,1 +1,42 @@
 @import url('../../assets/css/main.css');
+
+.calculator_box, .calculator_container {
+    /* background-color: var(--color-vapor-2-3); */
+
+    height: 50em;
+    width: 40em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator_result_box {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--color-vapor-1-3);
+
+    height: 25%;
+    width: inherit;
+
+}
+
+.calculator_buttons_box {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--color-vapor-1-2);
+
+    height: 75%;
+    width: inherit;
+
+}
+

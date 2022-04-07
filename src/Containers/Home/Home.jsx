@@ -1,10 +1,12 @@
 import React, {useEffect, useState} from 'react';
+import Calculator from '../../Components/Calculator/Calculator';
 import './Home.css';
 
 const Home = () => {
 
 return (
-<div> probando
+<div className='home_box'>
+    <Calculator/>
 </div>
 )
 }
