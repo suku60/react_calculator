@@ -7,9 +7,12 @@ const Calculator = () => {
 
 //    const [result, setResult] = useState(0)
 
+    const clearScreen = setScreen(0)
+
     const pressingButton = (props) =>{
         console.log(props)
-        if ( props === "1" || 
+        if ( 
+        props === "1" || 
         props === "2" || 
         props === "3" || 
         props === "4" || 
@@ -18,8 +21,14 @@ const Calculator = () => {
         props === "7" || 
         props === "8" || 
         props === "9" || 
-        props === "0" ){
+        props === "0" 
+        ) {
+
+            setScreen(screen+props)
+
         } else {
+
+            setScreen(props)
 
         }
     }
@@ -29,6 +38,7 @@ return (
 <div className='calculator_box'>
     <div className="calculator_container">
         <div className="calculator_result_box">
+            <div className="calculator_clear" onClick={()=>clearScreen()}>C</div>
             <div className="calculator_screen">{screen}
 
             </div>

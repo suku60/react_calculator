@@ -21,16 +21,37 @@
     width: inherit;
 
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.calculator_clear {
+    background-color: darkkhaki;
+
+    margin-right: 2%;
+    
+    height: 62%;
+    width: 5%;
+
+    border-radius: var(--border-radius-3);
+    color: red;
+    
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    cursor: pointer;
 }
 
 .calculator_screen {
     background-color: aqua;
 
     height: 62%;
-    width: 87%;
+    width: 80%;
 
     border-radius: var(--border-radius-3);
 
@@ -94,6 +115,6 @@
     
 }
 
-.button_item:hover {
+.button_item:hover, .calculator_clear:hover {
     transform: scale(.95) rotate(1deg);
 }
