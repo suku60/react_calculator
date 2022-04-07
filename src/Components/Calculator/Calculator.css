@@ -12,31 +12,88 @@
     align-items: center;
 }
 
+/* top: screen */
+
 .calculator_result_box {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
     background-color: var(--color-vapor-1-3);
-
+    
     height: 25%;
     width: inherit;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+.calculator_screen {
+    background-color: aqua;
+
+    height: 62%;
+    width: 87%;
+
+    border-radius: var(--border-radius-3);
+
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* mid and bot: buttons */
+
 .calculator_buttons_box {
+
+    margin: 0;
+    /* padding-top: 1em; */
+    background-color: var(--color-vapor-1-2);
+    
+    height: 75%;
+    width: inherit;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    background-color: var(--color-vapor-1-2);
-
-    height: 75%;
-    width: inherit;
 
 }
 
+.calculator_buttons_row {
+
+    /* height 23% because it was the simplest way to solve padding */
+    height: 23%;
+    width: inherit;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+
+}
+
+.button_item {
+    background-color: azure;
+    
+    padding: 0em; 
+    margin: 0em; 
+
+    width: 6em !important;
+    height: 6em !important;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+
+    cursor: pointer;
+
+    font-weight: 600;
+    
+}
+
+.button_item:hover {
+    transform: scale(.95) rotate(1deg);
+}
